@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thiệp Mời Lễ Tốt Nghiệp</title>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+      </head>
+      
+<body>
+  <!-- Hiệu ứng nón tốt nghiệp -->
+  <div class="snowflakes" id="snowflakes">
+    <!-- Nón tốt nghiệp sẽ được tạo thêm qua JavaScript -->
+  </div>
+
+  <!-- Form nhập thông tin người nhận -->
+  <div class="form-container" id="form-container">
+    <h2>Nhập tên của bạn để nhận thiệp mời</h2>
+    <div class="input-container">
+      <input type="text" id="guest-name-input" placeholder="Nhập tên của bạn">
+      <span class="snake">🐍</span> <!-- Hiệu ứng con rắn trỏ vào -->
+    </div>
+    <button id="submit-button">Gửi</button>
+  </div>
+
+  <!-- Thiệp mời -->
+  <div id="invitation" class="container" style="display:none;">
+    <div class="greeting">
+      <h1>Chào mừng bạn <span id="guest-name"></span></h1>
+      <p>Mời bạn tham gia lễ tốt nghiệp của <span class="highlight">Đỗ Phương</span></p>
+    </div>
+
+    <div class="event-info">
+      <p><span class="highlight">Thời gian:</span> 16:00 AM, ngày 09 tháng 1 2025</p>
+      <p><span class="highlight">Địa điểm:</span> HUTECH – Đại học Công nghệ TP.HCM (Thu Duc Campus)</p>
+    </div>
+
+    <!-- Hình ảnh -->
+    <div class="images">
+      <img src="images/your-photo1.jpg" alt="Ảnh 1: Lễ tốt nghiệp" width="300">
+    </div>
+
+    <!-- Đếm ngược -->
+    <div id="countdown" class="countdown"></div>
+
+    <div class="thanks-message">
+      <strong>Cảm ơn bạn đã đến chung vui với tôi trong ngày trọng đại này!</strong>
+      <br><br>
+      <a href="#" class="comment-button" id="comment-button">Gửi lời chúc cho Đỗ Phương</a>
+    </div>
+
+    <!-- Form gửi lời chúc (Ẩn ban đầu) -->
+    <div id="comment-form" style="display:none;">
+      <textarea id="guest-comment" placeholder="Nhập lời chúc của bạn..." rows="4"></textarea>
+      <br>
+      <button id="send-comment">Gửi lời chúc</button>
+    </div>
+
+    <div id="thank-you-message" style="display:none;">
+      <p>Lời chúc của bạn đã được ghim đến cho Đỗ Phương!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
